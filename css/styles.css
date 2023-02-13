@@ -41,3 +41,11 @@ main {
   border-radius: 5px;
   padding: 2px 5px;
 }
+footer {
+  border: 3px solid black;
+  height: 20px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 40;
+}
