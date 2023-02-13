@@ -41,3 +41,17 @@ main {
   border-radius: 5px;
   padding: 2px 5px;
 }
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(157, 184, 193);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 40;
+  margin: 10px 5px 6px;
+}
