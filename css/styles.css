@@ -65,9 +65,9 @@ footer .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 40;
 }
 
-article > span {
+.badge {
   position: absolute;
   top: -10px;
   right: 10px;
-  font-size: 30px !important;
+  font-size: 30px;
 }
