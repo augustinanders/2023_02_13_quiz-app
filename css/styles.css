@@ -29,8 +29,14 @@ main {
   margin-right: min(50px, 10%);
   margin-top: 30px;
   margin-bottom: 30px;
-  max-width: 300px;
+  width: 300px;
   text-align: center;
+  position: relative;
+}
+h2 {
+  font-size: 1.2em;
+  max-width: 240px;
+  margin-top: 1.2em;
 }
 .hashtags {
   align-self: flex-start;
@@ -51,7 +57,17 @@ footer {
   right: 0;
 }
 
+footer .material-symbols-outlined {
+  margin: 10px 5px 6px;
+}
+
 .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 40;
-  margin: 10px 5px 6px;
+}
+
+article > span {
+  position: absolute;
+  top: -10px;
+  right: 10px;
+  font-size: 30px !important;
 }
