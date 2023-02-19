@@ -47,7 +47,7 @@ main {
   margin: 15px 5px 5px;
   padding: 0;
 }
-.Card__hashtag {
+.Card__hashtag-list-item {
   border: 2px solid black;
   border-radius: 5px;
   padding: 2px 5px;
