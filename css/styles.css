@@ -58,7 +58,7 @@ main {
   right: 10px;
   font-size: 30px;
 }
-footer {
+footer ul {
   display: flex;
   justify-content: space-around;
   background-color: rgb(157, 184, 193);
@@ -66,6 +66,8 @@ footer {
   bottom: 0;
   left: 0;
   right: 0;
+  margin: 0;
+  padding: 0;
 }
 
 footer .material-symbols-outlined {
