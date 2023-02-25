@@ -1,26 +1,47 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --color-five: #cacaca;
+  --color-two: #575757;
+  --color-three: #2b2b2b;
+  --color-four: #121212;
+  --color-one: #003784;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-four);
 }
 header {
   text-align: center;
-  background-color: rgb(157, 184, 193);
+  background-color: var(--color-one);
   padding: 10px 5px;
+  color: var(--color-five);
 }
 
 header > h1 {
   margin: 0;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 60px;
 }
 .Card {
-  border: 3px solid black;
+  border: none;
   border-radius: 15px;
   display: flex;
   align-items: center;
@@ -28,16 +49,33 @@ main {
   margin-left: min(50px, 10%);
   margin-right: min(50px, 10%);
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   width: 300px;
   text-align: center;
   position: relative;
+  background-color: var(--color-three);
+  padding: 7px;
+  color: var(--color-five);
 }
 .Card__question {
   font-size: 1.2em;
   max-width: 240px;
   margin-top: 1.2em;
 }
+.Card__answer-button {
+  background-color: var(--color-two);
+  border: none;
+  padding: 8px;
+  margin: 3px;
+  color: var(--color-five);
+  border-radius: 5px;
+  border: 2px solid black;
+  box-shadow: 5px 6px 19px 2px rgba(0, 0, 0, 0.49);
+}
+/* .Card__answer-button:hover {
+  padding: 5px;
+  margin: 0px;
+} */
 .Card__hashtag-list {
   align-self: flex-start;
   list-style: none;
@@ -48,24 +86,39 @@ main {
   padding: 0;
 }
 .Card__hashtag-list-item {
-  border: 2px solid black;
+  border: none;
   border-radius: 5px;
   padding: 2px 5px;
+  background-color: var(--color-two);
+  opacity: 0.5;
+}
+.Card__hashtag-list-item a {
+  color: black;
+  text-decoration: none;
 }
 .Card__bookmark {
   position: absolute;
   top: -10px;
   right: 10px;
   font-size: 30px;
+  color: var(--color-five);
+}
+.Card__bookmark--marked {
+  color: var(--color-one);
 }
 footer {
+  color: var(--color-four);
+}
+footer ul {
   display: flex;
   justify-content: space-around;
-  background-color: rgb(157, 184, 193);
+  background-color: var(--color-one);
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+  margin: 0;
+  padding: 0;
 }
 
 footer .material-symbols-outlined {
@@ -74,4 +127,9 @@ footer .material-symbols-outlined {
 
 .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 700, "GRAD" 200, "opsz" 40;
+}
+
+footer a {
+  color: black;
+  text-decoration: none;
 }
