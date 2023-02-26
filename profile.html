@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+    <main>
+      <section class="profile-card">
+        <img
+          class="profile-card__img"
+          src="https://source.unsplash.com/random/300x300?portrait"
+          alt=""
+        />
+        <h3 class="profile-card__name">Augustin Anders</h3>
+        <h3 class="profile-card__about">About Me</h3>
+        <p class="profile-card__about-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+          deleniti voluptas? Commodi at iusto reiciendis dolorum magnam.
+          Excepturi alias laudantium distinctio nemo eius temporibus vel veniam
+          unde dolore! Molestias, maiores?
+        </p>
+        <ul class="counter-list">
+          <span class="counter-list__container">
+            <li class="counter-list__item material-symbols-outlined">
+              bookmark
+            </li>
+            13
+          </span>
+          <span class="counter-list__container">
+            <li class="counter-list__item material-symbols-outlined">quiz</li>
+            12
+          </span>
+        </ul>
+      </section>
+      <section class="settings">
+        <p>Dark Mode</p>
+        <button id="settings__dark-mode" class="settings__dark-mode">
+          <svg
+            width="100%"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 496"
+          >
+            <path
+              fill="currentColor"
+              d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+              transform="translate(-8 -8)"
+            />
+          </svg>
+        </button>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li class="material-symbols-outlined">
+            <a href="./index.html">home</a>
+          </li>
+          <li class="material-symbols-outlined">
+            <a href="./bookmarks.html">bookmark</a>
+          </li>
+          <li class="material-symbols-outlined">
+            <a href="./profile.html">person_filled</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
