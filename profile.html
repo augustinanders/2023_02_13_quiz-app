@@ -25,13 +25,16 @@
           alt=""
         />
         <h3 class="profile-card__name">Augustin Anders</h3>
-        <h3 class="profile-card__about">About Me</h3>
-        <p class="profile-card__about-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-          deleniti voluptas? Commodi at iusto reiciendis dolorum magnam.
-          Excepturi alias laudantium distinctio nemo eius temporibus vel veniam
-          unde dolore! Molestias, maiores?
-        </p>
+        <section class="profile-card__about">
+          <h3 class="profile-card__about-heading">About Me</h3>
+          <p class="profile-card__about-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            deleniti voluptas? Commodi at iusto reiciendis dolorum magnam.
+            Excepturi alias laudantium distinctio nemo eius temporibus vel
+            veniam unde dolore! Molestias, maiores?
+          </p>
+        </section>
+
         <ul class="counter-list">
           <span class="counter-list__container">
             <li class="counter-list__item material-symbols-outlined">
@@ -45,21 +48,28 @@
           </span>
         </ul>
       </section>
+
       <section class="settings">
-        <p>Dark Mode</p>
-        <button id="settings__dark-mode" class="settings__dark-mode">
-          <svg
-            width="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 496 496"
+        <h3>settings</h3>
+        <div class="settings__dark-mode">
+          <label for="settings__dark-mode-button">Dark Mode</label>
+          <button
+            id="settings__dark-mode-button"
+            class="settings__dark-mode-button"
           >
-            <path
-              fill="currentColor"
-              d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
-              transform="translate(-8 -8)"
-            />
-          </svg>
-        </button>
+            <svg
+              width="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 496"
+            >
+              <path
+                fill="currentColor"
+                d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                transform="translate(-8 -8)"
+              />
+            </svg>
+          </button>
+        </div>
       </section>
     </main>
     <footer>
