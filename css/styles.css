@@ -13,6 +13,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--color-four);
+  color: var(--color-five);
 }
 header {
   text-align: center;
@@ -40,7 +41,10 @@ main {
   margin-top: 50px;
   margin-bottom: 60px;
 }
-.Card {
+
+/* card */
+
+.card {
   border: none;
   border-radius: 15px;
   display: flex;
@@ -57,12 +61,12 @@ main {
   padding: 7px;
   color: var(--color-five);
 }
-.Card__question {
+.card__question {
   font-size: 1.2em;
   max-width: 240px;
   margin-top: 1.2em;
 }
-.Card__answer-button {
+.card__answer-button {
   background-color: var(--color-two);
   border: none;
   padding: 8px;
@@ -72,11 +76,7 @@ main {
   border: 2px solid black;
   box-shadow: 5px 6px 19px 2px rgba(0, 0, 0, 0.49);
 }
-/* .Card__answer-button:hover {
-  padding: 5px;
-  margin: 0px;
-} */
-.Card__hashtag-list {
+.card__hashtag-list {
   align-self: flex-start;
   list-style: none;
   display: flex;
@@ -85,27 +85,30 @@ main {
   margin: 15px 5px 5px;
   padding: 0;
 }
-.Card__hashtag-list-item {
+.card__hashtag-list-item {
   border: none;
   border-radius: 5px;
   padding: 2px 5px;
   background-color: var(--color-two);
   opacity: 0.5;
 }
-.Card__hashtag-list-item a {
+.card__hashtag-list-item a {
   color: black;
   text-decoration: none;
 }
-.Card__bookmark {
+.card__bookmark {
   position: absolute;
   top: -10px;
   right: 10px;
   font-size: 30px;
   color: var(--color-five);
 }
-.Card__bookmark--marked {
+.card__bookmark--marked {
   color: var(--color-one);
 }
+
+/* footer */
+
 footer {
   color: var(--color-four);
 }
@@ -132,4 +135,82 @@ footer .material-symbols-outlined {
 footer a {
   color: black;
   text-decoration: none;
+}
+
+/* profile page */
+.profile-card {
+  width: 90%;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card__img {
+  width: 13rem;
+  height: 13rem;
+  border-radius: 30%;
+}
+
+.profile-card__about {
+  background-color: var(--color-three);
+  padding: 1rem 1rem 0.5rem 1rem;
+  border-radius: 2rem;
+}
+.profile-card__about-heading {
+  margin: 0;
+}
+
+.profile-card__about-text {
+  margin: 0.5rem 0;
+}
+
+.counter-list {
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.counter-list__container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.4rem 1rem;
+  border-radius: 0.7rem;
+  background-color: #2b2b2b;
+}
+
+.counter-list__item {
+  z-index: 1;
+  color: var(--color-five);
+  padding-right: 0.4rem;
+}
+
+.settings {
+  width: 90%;
+}
+.settings h3 {
+  padding-left: 16px;
+}
+.settings__dark-mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 0.7rem;
+  background-color: #2b2b2b;
+  width: 70%;
+  margin: auto;
+}
+.settings__dark-mode-button {
+  color: var(--foreground);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
 }
